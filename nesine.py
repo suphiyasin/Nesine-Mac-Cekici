@@ -4,9 +4,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import random
 import time
-options = webdriver.ChromeOptions()    #Seçenek nesnesi oluşturduk
-options.add_argument('--headless')     #Seçenek nesnesine arka planda çalışması için gerekli kodu yazdık
-browser = webdriver.Chrome(options=options)
+options = webdriver.ChromeOptions()    #Chrome yi görmek  istiyorsan burayı sil 
+options.add_argument('--headless')     #chrome yi görmek istiyorsan burayı sil
+browser = webdriver.Chrome(options=options) #chromeyi görmek istiyorsan browser = webdriver.Chrome() yaz
 url = "https://www.nesine.com/iddaa/canli-skor/basketbol"
 browser.get(url)
 time.sleep(4)
