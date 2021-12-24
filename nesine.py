@@ -47,7 +47,7 @@ for elem in ssxp4:
 i = 0
 sayimk = len(hometeams)
 while (i < sayimk):
-    goinurl = "http://localhost/bettilt/adm/mcprc.php?evtakim="+hometeams[i]+"&deplasman="+awayteams[i]+"&skor="+homegol[i]+"-"+awaygol[i]+"&ms1=0.00&ms2=0.00&msx=0.00"
+    goinurl = "http://localhost/site/adm/mcprc.php?evtakim="+hometeams[i]+"&deplasman="+awayteams[i]+"&skor="+homegol[i]+"-"+awaygol[i]+"&ms1=0.00&ms2=0.00&msx=0.00"
     browser.execute_script("window.open(arguments[0])", goinurl)
     browser.switch_to.window(browser.window_handles[0])
     print(hometeams[i], homegol[i], "-", awaygol[i], awayteams[i])
